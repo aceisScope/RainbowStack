@@ -5,7 +5,6 @@ A UI component looks like Quiz Up result page
 
 ![ScreenShot](https://github.com/aceisScope/RainbowStack/raw/master/screenshot0.PNG)
 ![ScreenShot](https://github.com/aceisScope/RainbowStack/raw/master/screenshot1.png)
-![ScreenShot](https://github.com/aceisScope/RainbowStack/raw/master/screenshot2.png)
 
 
 ###Description
@@ -34,3 +33,6 @@ For example:
     self.view1.layer.shadowOpacity = YES;
 ```
 3. `#define BAR_HEIGHT 20` defines the actual height of rainbow bars at bottom.
+
+##TODO(maybe)
+I'm not sure if recycle is necessary, because it is quite unrealistic to put many views into this stack...
