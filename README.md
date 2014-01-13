@@ -3,7 +3,7 @@ RainbowStack
 
 A UI component looks like Quiz Up result page
 
-![ScreenShot](https://github.com/aceisScope/RainbowStack/raw/master/screenshot0.PNG)
+![ScreenShot](https://github.com/aceisScope/RainbowStack/raw/master/screenshot0.PNG) -->Expanded-->
 ![ScreenShot](https://github.com/aceisScope/RainbowStack/raw/master/screenshot1.png)
 
 
@@ -12,17 +12,21 @@ A UI component looks like Quiz Up result page
 This project is humble trial to simulate the result page of Quiz Up. 
 
 ###How to Use
-1.  Assign the number of stacks(views) in total. An assert will be thrown if this number is larger than 4. Because in the original 
+
+1.   `#define BAR_HEIGHT 20` defines the actual height of rainbow bars at bottom.
+
+2.  Assign the number of stacks(views) in total. An assert will be thrown if this number is larger than 4. Because in the original 
 Quiz Up app it is 4. But this doesn't mean its capability is limited to 4.
 
 ``` objective-c
     - (NSInteger)numberOfStacks; 
 ```
-2. 
-Assign each view for stack index. This idea is similar to the `UITableView cellForRowAtIndex`.
+3.
+Assign each view for stack index. 
 ``` objective-c
    - (UIView*)rainbowStacks:(RainbowStacks*)rainbowStacks viewForStack:(NSInteger)stack;
 ```
+This idea is similar to the `UITableView cellForRowAtIndex`.
 For example: 
 
 ``` objective-c
@@ -31,8 +35,7 @@ For example:
     self.view1.layer.shadowColor = shadowColor;
     self.view1.layer.shadowOffset = shadowOffset;
     self.view1.layer.shadowOpacity = YES;
-```
-3. `#define BAR_HEIGHT 20` defines the actual height of rainbow bars at bottom.
+``` 
 
 ##TODO(maybe)
 I'm not sure if recycle is necessary, because it is quite unrealistic to put many views into this stack...
